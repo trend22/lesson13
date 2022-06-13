@@ -45,7 +45,6 @@ const render = function () {
 
         //удаляем определённое задание
         li.querySelector('.todo-remove').addEventListener('click', function () {
-            console.log(item)
             todoData.splice(index, 1)
             localStorage.removeItem(item.text)
             render()
